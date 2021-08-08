@@ -1,26 +1,27 @@
 speed = import 'speed.spwn'
 
 // https://gdforum.freeforums.net/thread/55538/easy-speed-maths-numbers-speeds
+// currently using camiln314's values
 speeds = [
     [
         1/2,
-        8.36820083682
+        8.571423024
     ],
     [
         1,
-        10.3761348898
+        10.63339697
     ],
     [
         2,
-        12.9032258065
+        13.22162273
     ],
     [
         3,
-        15.5945419103
+        15.97160388
     ],
     [
         4,
-        19.1846522782
+        19.65735672
     ]
 ]
 
