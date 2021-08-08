@@ -1,0 +1,29 @@
+speed = import 'speed.spwn'
+
+// https://gdforum.freeforums.net/thread/55538/easy-speed-maths-numbers-speeds
+speeds = [
+    [
+        1/2,
+        8.36820083682
+    ],
+    [
+        1,
+        10.3761348898
+    ],
+    [
+        2,
+        12.9032258065
+    ],
+    [
+        3,
+        15.5945419103
+    ],
+    [
+        4,
+        19.1846522782
+    ]
+]
+
+for s in speeds {
+    $.print(s[0],' ', s[1] - speed(s[0]))
+}

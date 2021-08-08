@@ -1,0 +1,10 @@
+speed = (x:@number = 1){
+    // v2 (https://mycurvefit.com/)
+    return 5.170649 + 8.019236*x - 3.726698*x^2 + 1.000783*x^3 - 0.08783546*x^4
+    /*
+    // v1
+    return 3.1*x+6.8
+    */
+}
+
+return speed
