@@ -1,16 +1,13 @@
 speed = (x:@number = 1){
-    // v3 (camiln314's values)
-    return 5.287487 + 8.234255*x - 3.821881*x^2 + 1.022929*x^3 - 0.08939265*x^4
-
-    /*
-    // v2 (https://mycurvefit.com/) / forum values
+    // best formula (https://mycurvefit.com/) with forum values
     return 5.170649 + 8.019236*x - 3.726698*x^2 + 1.000783*x^3 - 0.08783546*x^4
-    // v1
-    return 3.1*x+6.8
 
-    // camiln314's formula
-    return 18.01654552273 * $.sin(0.374881736838 * x) + 2.97988428078 * $.cos(1.09409831563 * x) + 2.66913361709
-    */
+    // specky's formulas
+    // return 3.1*x+6.8
+
+    // camiln314's formulas
+    // return 18.01654552273 * $.sin(0.374881736838 * x) + 2.97988428078 * $.cos(1.09409831563 * x) + 2.66913361709
+    // return 5.287487 + 8.234255*x - 3.821881*x^2 + 1.022929*x^3 - 0.08939265*x^4
 }
 
 return speed

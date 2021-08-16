@@ -1,3 +1,4 @@
+extract obj_props
 speed = import 'speed.spwn'
 
 // https://gdforum.freeforums.net/thread/55538/easy-speed-maths-numbers-speeds
@@ -5,26 +6,40 @@ speed = import 'speed.spwn'
 speeds = [
     [
         1/2,
-        8.571423024
+        8.36820083682
     ],
     [
         1,
-        10.63339697
+        10.3761348898
     ],
     [
         2,
-        13.22162273
+        12.9032258065
     ],
     [
         3,
-        15.97160388
+        15.5945419103
     ],
     [
         4,
-        19.65735672
+        19.1846522782
     ]
 ]
 
 for s in speeds {
     $.print(s[0],' ', s[1] - speed(s[0]))
+}
+
+TIME = 20
+
+for index in ..speeds.length {
+    GROUP = ?g
+    SPEED = speed(speeds[index][0])
+    $.add(obj{
+        OBJ_ID: 1,
+        X: 0,
+        Y: (3.5+index)*30,
+        GROUPS: GROUP
+    });
+    -> GROUP.move(SPEED*TIME*10,0,TIME)
 }
