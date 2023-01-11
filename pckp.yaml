@@ -1,0 +1,7 @@
+%YAML 1.2
+---
+
+name: speed
+version: 0.0.1
+folders:
+  - lib
